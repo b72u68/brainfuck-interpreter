@@ -40,3 +40,5 @@ the file, if the command is
 ## Future plan
 
 Might write this interpreter in Ocaml (because I love Ocaml).
+
+- [ ] Create a shell for brainfuck.
