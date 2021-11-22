@@ -1,4 +1,4 @@
-# brainfuck-interpreter
+# Brainfuck Interpreter
 
 Interpreter for Brainfuck in Python
 
@@ -15,6 +15,7 @@ python3 brainfuck.py [filename]
 ```
 
 There are sample brainfuck files in `/examples` directory if you want to play with this.
+Note: brainfuck files have to end with `.bf` extension.
 
 ## How it works
 
@@ -36,6 +37,6 @@ the file, if the command is
   `[`. Else, if the value at `PTR` if not 0, get the location of matching `[` in
   `BEGIN_LOOP_IDX` and jump to it, else continue to next command.
 
-## Future
+## Future plan
 
 Might write this interpreter in Ocaml (because I love Ocaml).
