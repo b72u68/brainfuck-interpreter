@@ -42,13 +42,10 @@ def brainfuck(PROG):
                 while temp_idx < len(PROG) and open != 0:
                     if PROG[temp_idx] == "[":
                         open += 1
-
                     elif PROG[temp_idx] == "]":
                         open -= 1
-
                     if open < 0:
                         raise Exception('Too many "]"')
-
                     temp_idx += 1
                 if open > 0:
                     raise Exception(f'Missing "]" for "[" in position {idx}')
