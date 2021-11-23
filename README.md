@@ -42,3 +42,4 @@ the file, if the command is
 Might write this interpreter in Ocaml (because I love Ocaml).
 
 - [ ] Create a shell for brainfuck.
+- [ ] Create a visualization website for brainfuck (as a meme).

@@ -15,7 +15,7 @@ PTR = 0
 BEGIN_LOOP_IDX = []
 
 
-def brainfuck(PROG):
+def run(PROG):
 
     global CELLS, PTR, BEGIN_LOOP_IDX
 
@@ -76,7 +76,7 @@ def brainfuck(PROG):
         idx += 1
 
 
-def parser(raw):
+def parse(raw):
 
     PROG = []
     ctr = 0

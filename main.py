@@ -1,5 +1,5 @@
 import sys
-from brainfuck import brainfuck, parser
+from brainfuck import run, parse
 
 if len(sys.argv) < 2:
     raise Exception("Missing brainfuck file.")
@@ -14,9 +14,9 @@ try:
     file = open(fname, 'r')
     raw = "".join(file.readlines())
 
-    PROG = parser(raw)
+    PROG = parse(raw)
 
-    brainfuck(PROG)
+    run(PROG)
 
 except Exception as e:
     print(e)
