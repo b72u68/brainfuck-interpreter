@@ -26,13 +26,13 @@ def run(PROG):
         command = PROG[idx]
 
         if command == ">":
-            PTR = (PTR + 1) % CELL_SIZE
+            PTR = (PTR+1) % CELL_SIZE
 
         elif command == "<":
-            PTR = (CELL_SIZE + PTR - 1) % CELL_SIZE
+            PTR = (CELL_SIZE+PTR-1) % CELL_SIZE
 
         elif command == "+":
-            CELLS[PTR] = (CELLS[PTR]+1) % VALUE_MAX if CELLS[PTR] < VALUE_MAX else VALUE_MIN
+            CELLS[PTR] = (CELLS[PTR]+1) if CELLS[PTR] < VALUE_MAX else VALUE_MIN
 
         elif command == "-":
             CELLS[PTR] = CELLS[PTR]-1 if CELLS[PTR] > VALUE_MIN else VALUE_MAX
